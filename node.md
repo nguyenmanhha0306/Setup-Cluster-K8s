@@ -38,6 +38,8 @@ Ready                False   Mon, 13 Jun 2022 21:42:05 +0000   Mon, 13 Jun 2022 
 ```
 
 
+1. Verify that the CNI configuration directory referenced by containerd is not empty on the affected node.
+For Calico based clusters the directory should contain the following files:
 ```
 # ls -l /etc/cni/net.d/
 total 8
